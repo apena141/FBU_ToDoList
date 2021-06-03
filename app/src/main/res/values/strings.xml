@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FBU_ToDoList</string>
+    <string name="add">Add</string>
+    <string name="Item_hint">Add an item here!</string>
+    <string name="Update_hint">Update the item</string>
+    <string name="save">save</string>
+</resources>
