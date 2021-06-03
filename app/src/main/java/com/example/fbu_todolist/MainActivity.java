@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         itemsAdapter = new ItemsAdapter(items, onLongClickListener, clickListener);
         rvItems.setAdapter(itemsAdapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
+        rvItems.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
